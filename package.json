@@ -22,7 +22,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "eslint ."
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "dependencies": {
@@ -34,11 +34,6 @@
         "reflect-metadata": "^0.1.13",
         "rimraf": "^3.0.2",
         "rxjs": "^7.2.0"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
     },
     "devDependencies": {
         "@babel/core": "^7.15.0",
