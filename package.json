@@ -22,7 +22,8 @@
     },
     "husky": {
         "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+            "pre-commit": "npm test",
+            "commit-msg": "sh scripts/my-specific-hook.sh"
         }
     },
     "dependencies": {
